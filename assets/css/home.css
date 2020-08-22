@@ -74,17 +74,29 @@ p{
     border: 1px solid white;
     padding: 5px 30px;
 }
+nav a.icon {
+    background: rgb(49, 197, 107);
+    display: none;
+    color: whitesmoke;
+    font-size: 30px;
+    position: absolute;
+    right: 15px;
+    margin-top: 15px;
+    padding-left: 40px;
+    top: 0;
+  }
 
 @media screen and (max-width: 600px){
-  nav{
-    margin: 0;
-  }
-  nav ul{
+  nav #myLinks{
     background: whitesmoke;
     height: fit-content;
     width: 40%;
     margin: auto;
     padding: 20px 0;
+    display: none;
+  }
+  nav a.icon{
+      display: block;
   }
   li{
     line-height: 50px;
@@ -96,7 +108,7 @@ p{
     color: yellowgreen;
   }
   nav img{
-    width: 400px;
+    width: 200px;
     height: 70px;
   }
 }
