@@ -1,31 +1,53 @@
-
-body, html{
+*{
     padding: 0;
     margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 body{
     background: rgb(49, 197, 107);
+    width: 100%;
 }
 nav{
-    display: flex;
-    margin: 0 40px 100px 40px;
+    height: 80px;
+    width: 100%;
 }
 
-ul{
-    list-style-type: none;
-    margin-left: auto;
+nav img{
+    line-height: 80px;
 }
-li{
-    text-transform: uppercase;
-    font-size: 12px;
-    margin-left: 30px;
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
     display: inline-block;
+    line-height: 80px;
 }
-ul li a{
-    text-decoration: none;
-    color: white;
-    font-size: 12px;
+nav ul li a{
+    font-size: 17px;
     display: block;
+    color: white;
+    text-transform: uppercase;
+}
+.checkbtn{
+    font-size: 30px;
+    color: green;
+    float: right;
+    
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+nav img{
+    margin-left: 40px;
+    margin-top: 20px;
+}
+#check{
+    display: none;
 }
 
 #main{
@@ -53,6 +75,7 @@ p{
 
 #buttom-link{
     margin-top: 40px;
+    display: flex;
 }
 #buttom-link #download a{
     color: rgb(128, 140, 130);
@@ -62,54 +85,66 @@ p{
     background: white;
     border-radius: 20px;
     color: rgb(169, 170, 169);
-    padding: 5px 19px;
     border: none;
+    font-size: 12px;
+    width: 100px;
+    padding: 5px 0;
+    margin-right: 7px;
+    justify-content: center;
+    display: flex;
 }
 
 #buttom-link #sign-up{
     text-decoration: none;
     border-radius: 20px;
     background: none;
-    width: 200px;
+    width: 100px;
+    padding: 5px 0;
+    font-size: 12px;
+    justify-content: center;
     color: white;
     border: 1px solid white;
-    padding: 5px 30px;
+    display: flex;
 }
-nav a.icon {
-    background: rgb(49, 197, 107);
-    display: none;
-    color: whitesmoke;
-    font-size: 30px;
-    position: absolute;
-    right: 15px;
-    margin-top: 15px;
-    padding-left: 40px;
-    top: 0;
-  }
 
-@media screen and (max-width: 600px){
-  nav #myLinks{
-    background: whitesmoke;
-    height: fit-content;
-    width: 40%;
-    margin: auto;
-    padding: 20px 0;
-    display: none;
-  }
-  nav a.icon{
-      display: block;
-  }
-  li{
-    line-height: 50px;
-    width: 100px;
-  }
-  ul li a{
-    font-size: 20px;
-    display: block;
-    color: yellowgreen;
-  }
-  nav img{
-    width: 200px;
-    height: 70px;
-  }
+
+
+  @media screen and (max-width: 600px){
+    .checkbtn{
+        display: block;
+        color: white;
+        margin-right: 20px;
+    }
+    .fa{
+        border: 2px solid white;
+        padding: 0px 3px;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: whitesmoke;
+        top: 100px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #main{
+        margin: 50px 20px 50px 20px;
+    }
+    nav ul li{
+        display: block;
+        line-height: 60px;
+    }
+    nav img{
+        margin-left: 20px;
+        width: 120px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        color: rgb(49, 197, 107);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
 }
