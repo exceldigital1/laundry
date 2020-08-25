@@ -11,20 +11,26 @@ body{
 }
 nav{
     height: 80px;
+    justify-content: center;
     width: 100%;
 }
 
 nav img{
     line-height: 80px;
+    margin-left: 60px;
+    margin-top: 20px;
 }
 
 nav ul{
     float: right;
+    margin-right: 60px;
+    align-items: center;
 }
 
 nav ul li{
     display: inline-block;
     line-height: 80px;
+    margin-left: 15px;
 }
 nav ul li a{
     font-size: 17px;
@@ -36,45 +42,44 @@ nav ul li a{
     font-size: 30px;
     color: green;
     float: right;
-    
     margin-right: 40px;
     margin-top: 20px;
     cursor: pointer;
     display: none;
 }
-nav img{
-    margin-left: 40px;
-    margin-top: 20px;
-}
+
 #check{
     display: none;
 }
 
 #main{
-    margin: 50px 40px 100px 40px;
+    margin: 50px 40px 100px 60px;
+    width: 400px;
 }
 
 h1{
     color: white;
-    font-size: 25px;
+    font-size: 37px;
     font-family: sans-serif;
     font-weight: 550;
-    margin: 0;
+    margin: 10px auto;
 }
 h2{
     color: white;
+    font-size: 37px;
     font-weight: 1;
     font-family: sans-serif;
-    margin: 0;
+    margin-bottom: 10px;
 }
 p{
     color: white;
-    font-size: 16px;
-    margin: 25px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 50px auto;
 }
 
 #buttom-link{
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
 }
 #buttom-link #download a{
@@ -86,9 +91,9 @@ p{
     border-radius: 20px;
     color: rgb(169, 170, 169);
     border: none;
-    font-size: 12px;
-    width: 100px;
-    padding: 5px 0;
+    font-size: 15px;
+    width: 130px;
+    padding: 10px 0;
     margin-right: 7px;
     justify-content: center;
     display: flex;
@@ -98,18 +103,70 @@ p{
     text-decoration: none;
     border-radius: 20px;
     background: none;
-    width: 100px;
-    padding: 5px 0;
-    font-size: 12px;
+    width: 130px;
+    padding: 10px 0;
+    font-size: 15px;
     justify-content: center;
     color: white;
     border: 1px solid white;
     display: flex;
 }
+.main-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+.home-illustration img{
+    width: 540px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 60px;
+    height: 450px;
+}
+a:hover, a:active{
+    color: seagreen;
+}
 
 
+@media screen and (max-width: 1124px){
+    nav img{
+        width: 150px;
+    }
+    .home-illustration img{
+        width: 400px;
+        height: 400px;
+        margin-right: 20px;
+    }
+    #main{
+        margin: 50px auto 100px 20px;
+        width: 400px;
+    }
+    nav img{
+        margin-left: 20px;
+    }
+    
+    nav ul{
+        margin-right: 20px;
+    }
 
-  @media screen and (max-width: 600px){
+}
+@media screen and (max-width: 900px){
+    #main{
+        width: 330px;
+    }
+    .home-illustration img{
+        width: 350px;
+    }
+}
+
+
+  @media screen and (max-width: 768px){
+      h1{
+          font-size: 30px;
+      }
+      h2{
+          font-size: 30px;
+      }
     .checkbtn{
         display: block;
         color: white;
@@ -130,7 +187,8 @@ p{
         transition: all .5s;
     }
     #main{
-        margin: 50px 20px 50px 20px;
+        margin: 50px 40px 50px 40px;
+        width: auto;
     }
     nav ul li{
         display: block;
@@ -138,7 +196,6 @@ p{
     }
     nav img{
         margin-left: 20px;
-        width: 120px;
     }
     nav ul li a{
         font-size: 20px;
@@ -146,5 +203,38 @@ p{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    #buttom-link #download{
+        text-decoration: none;
+        background: white;
+        border-radius: 20px;
+        color: rgb(169, 170, 169);
+        border: none;
+        font-size: 12px;
+        width: 100px;
+        padding: 5px 0;
+        margin-right: 7px;
+        justify-content: center;
+        display: flex;
+    }
+    
+    #buttom-link #sign-up{
+        text-decoration: none;
+        border-radius: 20px;
+        background: none;
+        width: 100px;
+        padding: 5px 0;
+        font-size: 12px;
+        justify-content: center;
+        color: white;
+        border: 1px solid white;
+        display: flex;
+    }
+    .main-display{
+        margin-top: 100px;
+        display: block;
+    }
+    .home-illustration{
+        display: none;
     }
 }
