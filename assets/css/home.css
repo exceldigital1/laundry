@@ -31,6 +31,7 @@ nav ul{
 nav ul li{
     display: inline-block;
     margin-left: 15px;
+    line-height: 80px;
 }
 nav ul li a{
     font-size: 17px;
@@ -175,7 +176,7 @@ a:hover, a:active{
 
   @media screen and (max-width: 768px){
       body{
-        background: linear-gradient(rgb(49, 197, 107, 0.9),rgb(59, 202, 116, 0.9)), url(../images/wash-machine-with-laundry-service_24877-50600-removebg-preview.png);
+        background: linear-gradient(rgb(49, 197, 107, 0.9),rgb(59, 202, 116, 0.9)), url(https://o.remove.bg/downloads/7e16e735-c7a2-443a-a51d-3c8570b21f52/wash-machine-with-laundry-service_24877-50600-removebg-preview.png);
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -200,11 +201,10 @@ a:hover, a:active{
         height: 100vh;
         background: whitesmoke;
         top: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         left: -100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        margin: auto 0;
         text-align: center;
         transition: all .5s;
     }
@@ -215,6 +215,7 @@ a:hover, a:active{
     }
     nav ul li{
         display: block;
+        line-height: 50px;
     }
     nav img{
         margin-left: 20px;
