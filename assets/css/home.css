@@ -201,7 +201,11 @@ a:hover, a:active{
         height: 100vh;
         background: whitesmoke;
         top: 80px;
-        display: flex;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         left: -100%;
         transition: all .5s;
@@ -213,7 +217,6 @@ a:hover, a:active{
     }
     nav ul li{
         display: block;
-        line-height: 67px;
     }
     nav img{
         margin-left: 20px;
