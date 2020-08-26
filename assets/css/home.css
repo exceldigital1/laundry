@@ -6,13 +6,14 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(49, 197, 107);
+    background: rgb(59, 202, 116);
     width: 100%;
 }
 nav{
     height: 80px;
     justify-content: center;
     width: 100%;
+    background: rgb(49, 197, 107);
 }
 
 nav img{
@@ -34,7 +35,6 @@ nav ul li{
 }
 nav ul li a{
     font-size: 17px;
-    display: block;
     color: white;
     text-transform: uppercase;
 }
@@ -53,7 +53,7 @@ nav ul li a{
 }
 
 #main{
-    margin: 50px 40px 100px 60px;
+    margin: 20px 40px 30px 60px;
     width: 400px;
 }
 
@@ -97,6 +97,7 @@ p{
     margin-right: 7px;
     justify-content: center;
     display: flex;
+    transition: all .5s;
 }
 
 #buttom-link #sign-up{
@@ -110,6 +111,18 @@ p{
     color: white;
     border: 1px solid white;
     display: flex;
+    transition: all .5s;
+}
+
+#buttom-link #download:hover{
+    padding: 13px 10px;
+    color: black;
+    background: cornsilk;
+}
+#buttom-link #sign-up:hover{
+    padding: 13px 10px;
+    color: green;
+    background: rgb(201, 200, 197);
 }
 .main-display{
     display: grid;
@@ -159,13 +172,26 @@ a:hover, a:active{
     }
 }
 
+@media screen and (max-width: 390px){
+    #main h1{
+        font-size: 30px;
+    }
+    #main h2{
+        font-size: 30px;
+    }
+}
 
   @media screen and (max-width: 768px){
+      body{
+        background: linear-gradient(rgb(49, 197, 107, 0.9),rgb(59, 202, 116, 0.9)), url(../images/wash-machine-with-laundry-service_24877-50600-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
       h1{
-          font-size: 30px;
+          font-size: 37px;
       }
       h2{
-          font-size: 30px;
+          font-size: 37px;
       }
     .checkbtn{
         display: block;
@@ -181,18 +207,22 @@ a:hover, a:active{
         width: 100%;
         height: 100vh;
         background: whitesmoke;
-        top: 100px;
+        top: 80px;
         left: -100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto 0;
+        padding: 60px 0;
         text-align: center;
         transition: all .5s;
     }
     #main{
         margin: 50px 40px 50px 40px;
         width: auto;
+        
     }
     nav ul li{
         display: block;
-        line-height: 60px;
     }
     nav img{
         margin-left: 20px;
@@ -204,37 +234,27 @@ a:hover, a:active{
     #check:checked ~ ul{
         left: 0;
     }
-    #buttom-link #download{
-        text-decoration: none;
-        background: white;
-        border-radius: 20px;
-        color: rgb(169, 170, 169);
-        border: none;
-        font-size: 12px;
-        width: 100px;
-        padding: 5px 0;
-        margin-right: 7px;
-        justify-content: center;
-        display: flex;
-    }
-    
-    #buttom-link #sign-up{
-        text-decoration: none;
-        border-radius: 20px;
-        background: none;
-        width: 100px;
-        padding: 5px 0;
-        font-size: 12px;
-        justify-content: center;
-        color: white;
-        border: 1px solid white;
-        display: flex;
-    }
     .main-display{
         margin-top: 100px;
         display: block;
     }
     .home-illustration{
         display: none;
+    }
+    #buttom-link{
+        margin-top: 50px;
+        display: block;
+    }
+    #buttom-link #sign-up{
+        display: flex;
+        margin: auto;
+        width: 150px;
+        margin-top: 30px;
+    }
+    #buttom-link #download{
+        display: flex;
+        margin: auto;
+        width: 150px;
+        margin-bottom: 20px;
     }
 }
