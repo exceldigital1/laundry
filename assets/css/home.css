@@ -172,15 +172,6 @@ a:hover, a:active{
     }
 }
 
-@media screen and (max-width: 390px){
-    #main h1{
-        font-size: 30px;
-    }
-    #main h2{
-        font-size: 30px;
-    }
-}
-
   @media screen and (max-width: 768px){
       body{
         background: linear-gradient(rgb(49, 197, 107, 0.9),rgb(59, 202, 116, 0.9)), url(../images/wash-machine-with-laundry-service_24877-50600-removebg-preview.png);
