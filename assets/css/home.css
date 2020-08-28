@@ -176,7 +176,7 @@ a:hover, a:active{
 
   @media screen and (max-width: 768px){
       body{
-        background: linear-gradient(rgb(49, 197, 107, 0.9),rgb(59, 202, 116, 0.9)), url(https://o.remove.bg/downloads/7e16e735-c7a2-443a-a51d-3c8570b21f52/wash-machine-with-laundry-service_24877-50600-removebg-preview.png);
+        background: linear-gradient(rgb(49, 197, 107, 0.9),rgb(59, 202, 116, 0.9)), url(../images/wash-machine-with-laundry-service_24877-50600-removebg-preview.png);
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -200,9 +200,9 @@ a:hover, a:active{
         width: 100%;
         height: 100vh;
         background: whitesmoke;
+        opacity: 1;
         top: 80px;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        display: flex;
         text-align: center;
         justify-content: center;
         align-items: center;
@@ -212,17 +212,17 @@ a:hover, a:active{
     }
     #main{
         margin: 50px 40px 50px 40px;
-        width: auto;
-        
+        width: auto;  
     }
     nav ul li{
         display: block;
+        line-height: 50px;
     }
     nav img{
         margin-left: 20px;
     }
     nav ul li a{
-        font-size: 20px;
+        font-size: 26px;
         color: rgb(49, 197, 107);
     }
     #check:checked ~ ul{
