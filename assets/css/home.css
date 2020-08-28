@@ -37,6 +37,7 @@ nav ul li a{
     font-size: 17px;
     color: white;
     text-transform: uppercase;
+    transition: all .7s;
 }
 .checkbtn{
     font-size: 30px;
@@ -138,7 +139,7 @@ p{
     margin-right: 60px;
     height: 450px;
 }
-a:hover, a:active{
+ul li a:hover, a:active{
     color: seagreen;
 }
 
@@ -181,11 +182,17 @@ a:hover, a:active{
         background-position: center;
       }
       h1{
-          font-size: 37px;
+          font-size: 32px;
+          font-weight: 600;
       }
       h2{
-          font-size: 33px;
+          font-size: 35px;
       }
+      ul li a:hover, a:active{
+        color: seagreen;
+        padding: 2px 5px;
+        font-size: 20px;
+    }
     .checkbtn{
         display: block;
         color: white;
@@ -201,14 +208,22 @@ a:hover, a:active{
         height: 100vh;
         background: whitesmoke;
         opacity: 1;
+        margin: 0;
+        padding: 0;
         top: 80px;
-        display: flex;
         text-align: center;
-        justify-content: center;
-        align-items: center;
+        display: flex;
         flex-direction: column;
         left: -100%;
         transition: all .5s;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 135px;
     }
     #main{
         margin: 50px 40px 50px 40px;
@@ -222,7 +237,7 @@ a:hover, a:active{
         margin-left: 20px;
     }
     nav ul li a{
-        font-size: 26px;
+        font-size: 23px;
         color: rgb(49, 197, 107);
     }
     #check:checked ~ ul{
