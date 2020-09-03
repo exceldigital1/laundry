@@ -369,6 +369,13 @@ footer .social-media .fa{
         border: 1px solid rgb(228, 233, 235);
         padding: 10px 5px 10px 10px;
     }
+    #pricing-bottom{
+        background: rgb(41, 197, 107);
+        display: flex;
+        padding: 100px 150px;
+        margin: auto;
+        justify-content: center;
+    }
     #pricing-bottom img{
         display: none;
     }
@@ -403,13 +410,16 @@ footer .social-media .fa{
 
 @media screen and (max-width: 500px){
     .process img{
-        width: 80%;
+        width: 92%;
     }
     .process-text{
-        width: 80%;
+        width: 95%;
     }
     .process{
         width: auto;
         background-color: white;
+    }
+    #pricing-bottom{
+        padding: 100px 50px;
     }
 }
