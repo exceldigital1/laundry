@@ -25,7 +25,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 1em;
     justify-content: center;
-    margin: 60px 200px 20px 200px;
+    align-items: center;
 }
 .service{
     width: 210px;
@@ -338,7 +338,6 @@ footer .social-media .fa{
     .process{
         display: flex;
         flex-direction: column;
-        margin: auto;
         align-items: center;
     }
     .process img{
@@ -399,5 +398,18 @@ footer .social-media .fa{
     .first-foot{
         grid-column: 1/5;
         width: fit-content;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .process img{
+        width: 80%;
+    }
+    .process-text{
+        width: 80%;
+    }
+    .process{
+        width: auto;
+        background-color: white;
     }
 }
