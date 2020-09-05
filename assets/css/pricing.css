@@ -1,0 +1,151 @@
+body{
+    background: linear-gradient(rgb(208, 233, 211),rgba(255, 255, 255,));
+}
+.pricing-top h1{
+    margin-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: black;
+}
+.pricing-top{
+    margin-top: 100px;
+}
+
+#our-prices p, .pricing-top p, .delivery-section p{
+    color: black;
+    margin: 0;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+#our-prices{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    overflow: auto;
+    padding: 0 px;
+    margin: 100px 50px 0 50px;
+}
+.pricings1{
+    justify-self: end;
+    width: 350px;
+    padding: 20px;
+}
+.pricings{
+    justify-self: start;
+    padding: 20px;
+    width: 300px;
+}
+
+.pricings, .pricings1{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+}
+.pricings .fa{
+    font-size: 20px;
+    background-color: rgb(41, 197, 107);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+.pricings1 .fa{
+    font-size: 20px;
+    background-color: rgb(41, 197, 107);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+}
+#our-prices .pricings .price,#our-prices .pricings1 .price{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(41, 197, 107);
+}
+
+.pricings .prices{
+    color: rgb(41, 197, 107);
+    font-size: 18px;
+}
+.delivery-section h2{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 0;
+}
+
+.delivery-section img{
+    margin: 100px auto 100px auto;
+    width: 400px;
+    display: block;
+}
+.delivery-price{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.delivery1 h3, .delivery2 h3{
+    font-size: 25px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.delivery1 p, .delivery2 p{
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+    margin: 3px 0;
+}
+
+.delivery-price .delivery1{
+    background: rgb(80, 90, 84);
+    color: white;
+    margin-right: 1em;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.delivery-price .delivery2{
+    background: rgb(41, 197, 107);
+    color: white;
+    margin-right: 1em;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 600px){
+    body{
+        background: white;
+    }
+    .delivery1 h3, .delivery2 h3{
+        font-size: 18px;
+        font-weight: 300;
+        margin: 0;
+    }
+    .delivery1 p, .delivery2 p{
+        color: white;
+        font-size: 15px;
+        text-align: left;
+    }
+    .delivery-price .delivery1{
+        padding: 15px;
+    }
+    
+    .delivery-price .delivery2{
+        padding: 15px;
+    }
+    .delivery-section img{
+        width: 300px;
+        display: block;
+    }
+    
+    
+}
