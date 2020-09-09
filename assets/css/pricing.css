@@ -24,7 +24,6 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
-    overflow: auto;
     padding: 0 px;
     margin: 100px 50px 0 50px;
 }
@@ -36,7 +35,7 @@ body{
 .pricings{
     justify-self: start;
     padding: 20px;
-    width: 300px;
+    width: 350px;
 }
 
 .pricings, .pricings1{
@@ -146,6 +145,15 @@ body{
         width: 300px;
         display: block;
     }
-    
-    
+}
+
+@media screen and (max-width: 800px){
+    #our-prices{
+        display: flex;
+        height: 100vh;
+        overflow: auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px auto 0 auto;
+    }
 }
