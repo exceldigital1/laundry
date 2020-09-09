@@ -1,0 +1,35 @@
+body{
+    background: rgb(245,253,248);
+}
+form{
+    background: white;
+    width: fit-content;
+    margin: auto;
+    padding: 50px 50px;
+}
+
+label{
+    text-transform: capitalize;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 250px;
+    border: 1px solid rgb(245,253,248);
+    background: white;
+    height: 30px;
+}
+#codes input{
+    width: 100px;
+}
+
+#submit{
+    background: rgb(41,197,107);
+    color: white;
+    width: 100px;
+    border: none;
+    height: 35px;
+}

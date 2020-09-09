@@ -1,0 +1,112 @@
+body{
+    background: rgb(240,254,242);
+}
+p{
+    font-size: 15px;
+}
+h1{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 100px;
+}
+form h2{
+    font-weight: 700;
+}
+
+input{
+    display: block;
+    width: 270px;
+    height: 38px;
+    padding-left: 15px;
+    background: none;
+    border: 1px solid rgb(211,231,220);
+}
+
+form .click-block{
+    display: block;
+    margin-top: 10px;
+    width: 270px;
+    padding: 10px 0;
+    justify-content: center;
+    border: 2px solid rgb(0,211,92);
+    color: rgb(0,211,92);
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: none;
+}
+
+form{
+    background: rgb(245,253,248);
+    width: fit-content;
+    margin: 0;
+    padding: 50px 50px;
+}
+main img{
+    height: 336px;
+    width: 340px;
+    margin: 50px 50px;
+    background: whitesmoke;
+}
+main div{
+    background: white;
+}
+main{
+    display: flex;
+    margin: auto;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+#login{
+    background: rgb(18,207,105);
+    text-align: center;
+    height: fit-content;
+    padding: 0;
+    height: 38px;
+    border: none;
+    color: white;
+}
+
+form h2{
+    color: black;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: larger;
+}
+#remember{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background: none;
+    padding: 0 10px;
+    margin: auto;
+    align-items: center;
+}
+form a{
+    color: rgb(0,211,92);
+}
+form p a{
+    color: rgb(0,211,92);
+}
+form p{
+    margin: 0;
+    color: black;
+}
+
+@media screen and (max-width: 820px){
+    main img{
+        margin: 50px 20px;
+    }
+    form{
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width: 700px){
+    main div{
+        display: none;
+    }
+    form{
+        padding: 50px 50px;
+    }
+}
