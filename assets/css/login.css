@@ -1,5 +1,5 @@
 body{
-    background: rgb(240,254,242);
+    background: linear-gradient(rgb(241,254,243) 20%,rgb(255,255,255) 80%);
 }
 p{
     font-size: 15px;

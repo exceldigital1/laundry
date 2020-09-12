@@ -1,5 +1,5 @@
 body{
-    background: rgb(245,253,248);
+    background: linear-gradient(rgb(241,254,243) 20%,rgb(255,255,255) 80%);
 }
 form{
     background: white;
