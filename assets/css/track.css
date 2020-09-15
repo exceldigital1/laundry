@@ -1,3 +1,11 @@
 body{
     background: linear-gradient(rgb(241,254,243),rgb(255,255,255));
 }
+nav{
+    background: none;
+    color: black;
+}
+
+nav ul li a{
+    color: black;
+}
