@@ -155,6 +155,18 @@ body{
         width: 300px;
         display: block;
     }
+    #our-prices{
+        display: flex;
+        height: 100vh;
+        overflow: auto;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px auto 0 auto;
+    }
+    .pricings, .pricings1{
+        margin-bottom: 1em;
+    }
+    
 }
 
 @media screen and (max-width: 800px){
@@ -165,5 +177,32 @@ body{
         flex-direction: column;
         align-items: center;
         margin: 100px auto 0 auto;
+    }
+    .pricings, .pricings1{
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .delivery1 h3, .delivery2 h3{
+        font-size: 14px;
+        font-weight: 300;
+        margin: 0;
+    }
+    .delivery1 p, .delivery2 p{
+        color: white;
+        font-size: 13px;
+        text-align: left;
+    }
+    .delivery-price .delivery1{
+        padding: 10px;
+    }
+    
+    .delivery-price .delivery2{
+        padding: 10px;
+    }
+    .delivery-section img{
+        width: 270px;
+        display: block;
     }
 }
