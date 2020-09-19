@@ -155,20 +155,11 @@
         <h2>customers feedback</h2>
         <p class="p-top">This template is using adobe muse making it easier to edit, add content, and without having to use</p>
         <div id="feedback-dsiplay">
-            <div class="feedback">
-                <div class="feedback-sub">
-                    <img src="assets/images/feedback-image.jpg" alt="">
-                    <div>
-                        <h3>john doe</h3>
-                        <p>service manager</p>
-                    </div>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                </div>
-                <p>this template is using adobe muse making it easier to edit, add content, and without having to use</p>
-            </div>
 
+        <div class="feed">
+            <a style="margin-right: 15px;" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
             <div class="feedback">
-                <div class="feedback-sub">
+                <div class="feedback-sub" id="feed1">
                     <img src="assets/images/feedback-image.jpg" alt="">
                     <div>
                         <h3>john doe</h3>
@@ -178,7 +169,11 @@
                 </div>
                 <p>this template is using adobe muse making it easier to edit, add content, and without having to use</p>
             </div>
+            <a href="#feed2" onclick="One(document.getElementById('feed2').style.display='block'); Two(document.getElementById('feed1').style.display='none');" ><i class="fa fa-angle-right" aria-hidden="true"></i></a>
         </div>
+        </div>
+
+            
     </section>
 
     <footer>

@@ -387,6 +387,14 @@ table th{
     font-size: 16px;
 }
 
+#feedbacks #feedback-dsiplay .feed{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 200px;
+    width: 100%;
+    align-items: center;
+}
+
 .feedback{
     background: whitesmoke;
     padding: 20px;
@@ -395,6 +403,17 @@ table th{
     width: 350px;
     margin-right: 20px;
     box-shadow: 10px 10px 5px rgb(243, 240, 240);
+}
+#feedback-dsiplay .fa{
+    font-size: 30px;
+    transition: all .9s;
+    color:  rgb(41, 197, 107);
+}
+
+#feedback-dsiplay .fa:hover{
+    color: rgb(38, 85, 57);
+    font-size: 36px;
+    padding: 0 20px;
 }
 #feedback-dsiplay{
     display: flex;
@@ -532,7 +551,14 @@ footer .social-media .fa{
     }
 }
 
+@media screen and (max-width: 600px){
+    .feedback1{
+        display: none;
+    }
+}
+
 @media screen and (max-width: 760px){
+    
     #feedbacks .p-top{
         width: 55%;
     }

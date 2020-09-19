@@ -4,7 +4,7 @@ nav{
 }
 
 nav ul li a{
-    color: black;
+    color: rgb(41, 197, 107);
 }
 body{
     background: linear-gradient(rgb(241,254,243) 20%,rgb(255,255,255) 80%);
