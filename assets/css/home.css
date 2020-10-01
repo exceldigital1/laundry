@@ -208,8 +208,6 @@ ul li a:hover, a:active{
     text-align: center;
     color: rgb(129, 150, 156);
     margin: auto;
-    idth: 300px;
-    isplay: flex;
     margin-bottom: 1px;
     font-size: 18px;
 }
