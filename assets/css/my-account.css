@@ -41,3 +41,23 @@ input{
     border: none;
     height: 35px;
 }
+footer #footer-form{
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+footer #sub2{
+    height: 35px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    color: rgb(41, 197, 107);
+}
+
+footer #sub{
+    height: 35px;
+    width: 250px;
+    color: white;
+    background: none;
+    border: none;
+}

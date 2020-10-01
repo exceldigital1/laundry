@@ -10,6 +10,9 @@ body{
     width: 100%;
     background: white;
 }
+a{
+    cursor: pointer;
+}
 .main-display{
     background: rgb(59, 202, 116);
     width: 100%;
@@ -98,9 +101,8 @@ p{
     color: rgb(169, 170, 169);
     border: none;
     font-size: 15px;
-    width: 130px;
-    order: 2;
-    padding: 10px 0;
+    width: 200px;
+    padding: 15px 0;
     margin-right: 7px;
     justify-content: center;
     display: flex;
@@ -111,10 +113,10 @@ p{
     text-decoration: none;
     border-radius: 20px;
     background: none;
-    width: 130px;
-    padding: 10px 0;
+    width: 200px;
+    padding: 15px 0;
     font-size: 15px;
-    margin-right: 30px;
+    margin-right: 10px;
     justify-content: center;
     color: white;
     border: 1px solid white;
@@ -122,20 +124,11 @@ p{
     transition: all .5s;
 }
 
-#buttom-link #download:hover{
-    padding: 13px 10px;
-    color: black;
-    background: cornsilk;
-}
-#buttom-link #sign-up:hover{
-    padding: 13px 10px;
-    color: green;
-    background: rgb(201, 200, 197);
-}
+
 .main-display{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 100px;
+    padding: 50px;
 }
 .home-illustration img{
     width: 540px;
@@ -145,7 +138,7 @@ p{
     height: 450px;
 }
 ul li a:hover, a:active{
-    color: seagreen;
+    color: whitesmoke;
 }
 
 #main-display{
@@ -201,7 +194,7 @@ ul li a:hover, a:active{
 }
 
 #processes{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 #processes h2{
@@ -258,7 +251,7 @@ ul li a:hover, a:active{
 }
 
 .table{
-    padding: 100px 0;
+    padding: 50px 0;
     background: whitesmoke;
     
 }
@@ -295,7 +288,7 @@ table th{
 #pricing-bottom{
     background: rgb(41, 197, 107);
     display: flex;
-    padding: 70px 150px;
+    padding: 0px 150px;
     margin: auto;
     justify-content: center;
 }
@@ -331,9 +324,9 @@ table th{
     color: rgb(169, 170, 169);
     border: none;
     font-size: 15px;
-    width: 130px;
-    padding: 10px 0;
-    margin-right: 15px;
+    width: 200px;
+    padding: 15px 0;
+    margin-right: 10px;
     text-transform: capitalize;
     justify-content: center;
     display: flex;
@@ -344,8 +337,8 @@ table th{
     text-decoration: none;
     border-radius: 20px;
     background: none;
-    width: 130px;
-    padding: 10px 0;
+    width: 200px;
+    padding: 15px 0;
     text-transform: capitalize;
     font-size: 15px;
     margin-right: 30px;
@@ -356,18 +349,9 @@ table th{
     transition: all .5s;
 }
 
-#pricing-bottom #second:hover{
-    padding: 13px 10px;
-    color: black;
-    background: cornsilk;
-}
-#pricing-bottom #first:hover{
-    padding: 13px 10px;
-    color: green;
-    background: rgb(201, 200, 197);
-}
+
 #feedbacks{
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #feedbacks h2{
     text-align: center;
@@ -418,7 +402,7 @@ table th{
 #feedback-dsiplay{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
     overflow: auto;
 }
 #feedback-dsiplay .feeds{
@@ -457,11 +441,31 @@ table th{
 }
 footer{
     background: rgb(41, 197, 107);
-    margin-top: 100px;
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 42% 17% 17% 24%;
     padding: 50px 200px 50px 200px;
     color: white;
+}
+footer #footer-form{
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+footer #sub2{
+    height: 35px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    color: rgb(41, 197, 107);
+}
+
+footer #sub{
+    height: 35px;
+    width: 250px;
+    color: white;
+    background: none;
+    border: none;
 }
 footer p{
     font-size: 15px;
@@ -473,10 +477,10 @@ footer a{
     display: block;
     font-size: 11px;
     text-transform: uppercase;
-    line-height: 33px;
+    line-height: 25px;
 }
 footer div h3{
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     text-transform: capitalize;
     width: auto;
 }
@@ -485,7 +489,7 @@ footer .first-foot{
 }
 footer .social-media{
     display: flex;
-    margin: 0;
+    margin-top: 10px;
 }
 footer .social-media .fa{
     font-size: 14px;
@@ -588,6 +592,15 @@ footer .social-media .fa{
     .process-text{
         width: 70%;
     }
+    .process-text .fa{
+        width: fit-content;
+        display: block;
+        font-size: 30px;
+        margin: auto;
+    }
+    .process-text h3{
+        text-align: center;
+    }
     #processes .process .process-text p{
         font-size: 17px;
     }
@@ -625,7 +638,7 @@ footer .social-media .fa{
     }
     #bottom-button #first{
         margin: auto;
-        margin-bottom: 25px;
+        margin-bottom: 10px;
     }
     #bottom-button #second{
         margin: auto;
@@ -693,7 +706,7 @@ footer .social-media .fa{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: whitesmoke;
+        background: rgb(41, 197, 107);
         opacity: 1;
         margin: 0;
         padding: 0;
@@ -711,6 +724,7 @@ footer .social-media .fa{
         align-items: center;
         text-align: center;
         margin-top: 100px;
+        
     }
     #main{
         margin: 50px 40px 50px 40px;
@@ -725,7 +739,7 @@ footer .social-media .fa{
     }
     nav ul li a{
         font-size: 23px;
-        color: rgb(41, 197, 107);
+        color: white;
     }
     #check:checked ~ ul{
         left: 0;
@@ -745,14 +759,14 @@ footer .social-media .fa{
     #buttom-link #sign-up{
         display: flex;
         margin: auto;
-        width: 150px;
-        margin-top: 30px;
+        width: 200px;
+        margin-bottom: 10px;
     }
     #buttom-link #download{
         display: flex;
         margin: auto;
-        width: 150px;
-        margin-bottom: 20px;
+        width: 200px;
+        margin-top: 10px;
     }
 }
 

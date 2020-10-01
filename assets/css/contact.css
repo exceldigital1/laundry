@@ -1,10 +1,4 @@
-nav{
-    color: black;
-}
 
-nav ul li a{
-    color: rgb(41, 197, 107);
-}
 body{
     background: linear-gradient(rgb(241,254,243) 20%,rgb(255,255,255) 80%);
 }
@@ -12,7 +6,7 @@ h1{
     color: black;
     text-align: center;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #foreword{
     color: black;
@@ -20,7 +14,7 @@ h1{
     margin: 0;
     text-align: center;
 }
-input{
+#form input{
     display: block;
     width: 270px;
     height: 38px;
@@ -28,7 +22,7 @@ input{
     background: none;
     border: 1px solid rgb(211,231,220);
 }
-form a{
+#form a{
     display: block;
     margin-top: 10px;
     width: 270px;
@@ -40,12 +34,12 @@ form a{
     text-align: center;
     text-decoration: none;
 }
-form #signup{
+#form #signup{
     background: rgb(0,211,92);
     color: white;
     border: none;
 }
-form{
+#form{
     background: rgb(245,253,248);
     width: fit-content;
     margin: 0;
@@ -63,11 +57,12 @@ main div{
 main{
     display: flex;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
+    padding-bottom: 50px;
     justify-content: center;
 }
 
-form h2{
+#form h2{
     color: black;
     text-transform: capitalize;
     font-weight: 700;
@@ -80,12 +75,32 @@ form h2{
     padding: 15px;
     margin-bottom: 15px;
 }
+footer #footer-form{
+    display: flex;
+    margin-top: 5px;
+    border: 2px solid white;
+}
+footer #sub2{
+    height: 35px;
+    width: 100px;
+    background-color: white;
+    border: none;
+    color: rgb(41, 197, 107);
+}
+
+footer #sub{
+    height: 35px;
+    width: 250px;
+    color: white;
+    background: none;
+    border: none;
+}
 
 @media screen and (max-width: 820px){
     main img{
         margin: 50px 20px;
     }
-    form{
+    #form{
         padding: 50px 20px;
     }
     #foreword{
@@ -97,7 +112,7 @@ form h2{
     main div{
         display: none;
     }
-    form{
+    #form{
         padding: 50px 50px;
     }
     #foreword{

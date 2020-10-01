@@ -28,57 +28,61 @@
 
         </ul>
     </nav>
-    <h1>Login to Nettoyeurs Express</h1>
 
     <main>
         <div>
             <img src="assets/images/login.jpg" alt="">
         </div>
         
-        <form action="netlify">
-            <h2>hello, <br> Login to Your Account</h2>
+        <form id="form" action="netlify">
+            <h2>Login to your account</h2>
             <br>
-            <input type="email" id="mail" placeholder="email address">
+            <input type="email" id="mail" placeholder="Email Address">
             <br>
             <input type="password" id="password" placeholder="Password">
             <br>
             <div id="remember">
-                <p>Remember Me</p>
+                <p  style="color: rgb(0,211,92);">Remember me </p>
+                <input id="chk" type="checkbox" name="check" value="remeber">
                 <a>Forgot Password</a>
             </div>     
             <br>
             <input type="submit" id="login" value="Login">
             <br>
-            <p style="padding: 0 10px; color: rgb(0,211,92);">Don't have an account? <a href="sign-up.html">click here</a></p>
+            <a href="sign-up.html" style="padding: 10px 10px; color: rgb(0,211,92);">Don't have an account? click here</a>
             <br>
             <a class="click-block" style="color: rgb(0,211,92);" href="#">login with facebook</a>
         </form>
     </main>
 
-    <footer>
+    <footer class="sections">
         <div class="first-foot">
             <img src="assets/images/Capture.PNG" alt="">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis eaque repellendus modi eum minus sit. Quibusdam possimus deserunt dolorem harum accusamus beatae suscipit, debitis fugit blanditiis hic! Commodi, fuga expedita!</p>
-            <h4>subscribe to our newsletter</h4>
-            <input type="email" id="sub">
+            <h4>Subscribe to our newsletter</h4>
+            <form id="footer-form"  action="netlify">
+                <input type="email" id="sub">
+                <input type="submit" value="Subscribe" id="sub2">
+            </form>
+            
         </div>
         <div class="second-foot">
-            <h3>company</h3>
+            <h3>Company</h3>
             <a href="index.html">home</a>
             <a href="pricing.html">pricing</a>
             <a href="contact.html">contact us</a>
             <a href="#">faq</a>
         </div>
         <div class="third-foot">
-            <h3>services</h3>
+            <h3>Services</h3>
             <a href="#">dry cleaning</a>
             <a href="#">laundry</a>
             <a href="#">alteration</a>
         </div>
         <div class="fourth-foot">
-            <h3>contact us</h3>
-            <p>09078740655</p>
-            <p class="foot-mail">saheed.adedapo111@gmail.com</p>
+            <h3>Contact us</h3>
+            <a >09078740655</a>
+            <a class="foot-mail">saheed.adedapo111@gmail.com</a>
             <div class="social-media">
                 <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
                 <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
